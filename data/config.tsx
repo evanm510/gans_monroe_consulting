@@ -28,8 +28,18 @@ const siteConfig = {
         href: '',
       },
       {
+        id: 'testimonials',
+        label: 'Testimonials',
+        href: '',
+      },
+      {
         id: 'faq',
         label: 'FAQ',
+        href: '',
+      },
+      {
+        id: 'contact',
+        label: 'Contact',
         href: '',
       },
     ],

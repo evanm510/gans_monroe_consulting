@@ -42,6 +42,7 @@ import * as React from 'react'
 
 import { About } from '#components/about'
 import { ButtonLink } from '#components/button-link/button-link'
+import { Contact } from '#components/contact'
 import { Faq } from '#components/faq'
 import { Features } from '#components/features'
 import { BackgroundGradient } from '#components/gradients/background-gradient'
@@ -76,6 +77,8 @@ const Home: NextPage = () => {
       {/* <PricingSection /> */}
 
       <FaqSection />
+
+      <ContactSection />
     </Box>
   )
 }
@@ -458,6 +461,7 @@ const TestimonialsSection = () => {
 
   return (
     <Testimonials
+      id="testimonials"
       title={testimonials.title}
       columns={[1, 2, 3]}
       innerWidth="container.xl"
@@ -475,18 +479,12 @@ const TestimonialsSection = () => {
   )
 }
 
-// const PricingSection = () => {
-//   return (
-//     <Pricing {...pricing}>
-//       <Text p="8" textAlign="center" color="muted">
-//         VAT may be applicable depending on your location.
-//       </Text>
-//     </Pricing>
-//   )
-// }
-
 const FaqSection = () => {
   return <Faq {...faq} />
 }
 
 export default Home
+
+const ContactSection = () => {
+  return <Contact />
+}
