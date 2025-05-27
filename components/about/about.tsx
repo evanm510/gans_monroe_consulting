@@ -1,6 +1,12 @@
 import {
+  Avatar,
   Box,
+  Card,
+  CardBody,
+  CardHeader,
+  CardProps,
   Circle,
+  Flex,
   Heading,
   Icon,
   ResponsiveValue,
@@ -12,7 +18,9 @@ import {
   VStack,
   useMultiStyleConfig,
 } from '@chakra-ui/react'
+import { Link } from '@saas-ui/react'
 import { Section, SectionTitle, SectionTitleProps } from 'components/section'
+import { FaTwitter } from 'react-icons/fa'
 
 import * as React from 'react'
 
@@ -20,6 +28,53 @@ import { Testimonial } from '#components/testimonials'
 
 const Revealer = ({ children }: any) => {
   return children
+}
+
+export interface ProfileProps extends CardProps {
+  name: string
+  description: React.ReactNode
+  avatar: string
+  href?: string
+  children?: React.ReactNode
+}
+
+export const Profile = ({
+  name,
+  description,
+  avatar,
+  href,
+  children,
+  ...rest
+}: ProfileProps) => {
+  return (
+    <Card position="relative" {...rest} p="6">
+      <Flex direction={['column', 'row']} align="flex-start" gap="6">
+        <Avatar
+          name={name}
+          src={avatar}
+          size="2xl"
+          bg="transparent"
+          boxSize="150px"
+          flexShrink={0}
+        />
+        <Box>
+          <Heading size="md" mb="1">
+            {name}
+          </Heading>
+          <Text fontSize="sm" color="gray.500" mb="4">
+            {description}
+          </Text>
+          <Text>{children}</Text>
+        </Box>
+      </Flex>
+
+      {href && (
+        <Link href={href} position="absolute" top="4" right="4">
+          <FaTwitter />
+        </Link>
+      )}
+    </Card>
+  )
 }
 
 export interface AboutProps
@@ -83,42 +138,44 @@ export const About: React.FC<AboutProps> = (props) => {
           </Box>
         )}
       </Stack>
-      <Testimonial
-        name="Phillip Gans, PhD"
-        description="Senior Geologist"
-        avatar="/static/images/gans_avatar.jpg"
-        href=""
-        children=<>
-          My interests lie in the general fields of structural geology and
-          tectonics and are focused on deformational and thermal processes
-          within the continental lithosphere. My research is mainly in the field
-          of Extensional Tectonics and is focused on exactly how continents rift
-          and the relationship between extension and magmatism. I make most of
-          my observations and draw much of my scientific inspiration from
-          field-based investigations. My research projects generally involve
-          detailed geologic mapping of critical areas followed by appropriate
-          laboratory measurements (e.g., radiometric dating, geochemical
-          analyses) and numerical modeling in order to better understand the
-          structural and/or thermal process under study. Recent work has focused
-          on the Cenozoic evolution of the Basin and Range province of the
-          western U.S. and on the origin of Cretaceous gneiss domes in Arctic
-          Alaska and northeast Russia. Current and future studies will expanded
-          on these themes and will focus on the evolution of the Mexican Basin
-          and Range province and the structural evolution of gneiss domes on the
-          Tibetan plateau.
-        </>
-      />
-      <Testimonial
-        name="Evan Monroe, PhD"
-        description="Geologist"
-        avatar="/static/images/monroe_avatar.jpg"
-        children=<>
-          Late Cretaceous tectonic evolution of the Deep Creek-Kern Mountains,
-          eastern Nevada and western Utah: Magmatically induced large-scale
-          folding, dynamothermal metamorphism, and ductile strain at mid- to
-          upper-crustal levels in the Sevier hinterland
-        </>
-      />
+      <Stack spacing={8}>
+        <Profile
+          name="Phillip Gans, PhD"
+          description="Senior Geologist"
+          avatar="/static/images/gans_avatar.jpg"
+          href=""
+          children=<>
+            My interests lie in the general fields of structural geology and
+            tectonics and are focused on deformational and thermal processes
+            within the continental lithosphere. My research is mainly in the
+            field of Extensional Tectonics and is focused on exactly how
+            continents rift and the relationship between extension and
+            magmatism. I make most of my observations and draw much of my
+            scientific inspiration from field-based investigations. My research
+            projects generally involve detailed geologic mapping of critical
+            areas followed by appropriate laboratory measurements (e.g.,
+            radiometric dating, geochemical analyses) and numerical modeling in
+            order to better understand the structural and/or thermal process
+            under study. Recent work has focused on the Cenozoic evolution of
+            the Basin and Range province of the western U.S. and on the origin
+            of Cretaceous gneiss domes in Arctic Alaska and northeast Russia.
+            Current and future studies will expanded on these themes and will
+            focus on the evolution of the Mexican Basin and Range province and
+            the structural evolution of gneiss domes on the Tibetan plateau.
+          </>
+        />
+        <Profile
+          name="Evan Monroe, PhD"
+          description="Geologist"
+          avatar="/static/images/monroe_avatar.jpg"
+          children=<>
+            Late Cretaceous tectonic evolution of the Deep Creek-Kern Mountains,
+            eastern Nevada and western Utah: Magmatically induced large-scale
+            folding, dynamothermal metamorphism, and ductile strain at mid- to
+            upper-crustal levels in the Sevier hinterland
+          </>
+        />
+      </Stack>
     </Section>
   )
 }
