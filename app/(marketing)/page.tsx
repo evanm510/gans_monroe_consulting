@@ -192,7 +192,7 @@ const HeroSection: React.FC = () => {
             title: 'Efficient Exploration',
             icon: FiThumbsUp,
             description:
-              'Designed to reduce boilerplate and fully typed, build your product at speed.',
+              'Our streamlined workflows and expertise accelerate your path to viable lithium deposits.',
             iconPosition: 'left',
             delay: 1.1,
           },

@@ -80,7 +80,7 @@ const siteConfig = {
         icon: FiCheck,
         title: 'Efficient Exploration',
         description:
-          'Designed to streamline your exploration process, accelerating discovery and reducing risk.',
+          'Our streamlined workflows and expertise accelerate your path to viable lithium deposits.',
       },
     ],
   },
