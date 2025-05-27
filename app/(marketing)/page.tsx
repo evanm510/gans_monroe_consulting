@@ -71,7 +71,7 @@ const Home: NextPage = () => {
 
       <HighlightsSection />
 
-      <FeaturesSection />
+      <ServicesSection />
 
       <TestimonialsSection />
 
@@ -305,10 +305,10 @@ const HighlightsSection = () => {
   )
 }
 
-const FeaturesSection = () => {
+const ServicesSection = () => {
   return (
     <Features
-      id="features"
+      id="services"
       title={
         <Heading
           lineHeight="short"
