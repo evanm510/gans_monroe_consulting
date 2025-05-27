@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
             id="home"
             justifyContent="flex-start"
             px="0"
-            title={<FallInPlace>Gans-Monroe Lithium Consulting</FallInPlace>}
+            title={<FallInPlace>Gans-Monroe Geologic Consulting</FallInPlace>}
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
                 We offer strategic guidance and technical expertise in the

@@ -144,37 +144,35 @@ export const About: React.FC<AboutProps> = (props) => {
           description="Senior Geologist"
           avatar="/static/images/gans_avatar.jpg"
           href=""
-          children=<>
-            My interests lie in the general fields of structural geology and
-            tectonics and are focused on deformational and thermal processes
-            within the continental lithosphere. My research is mainly in the
-            field of Extensional Tectonics and is focused on exactly how
-            continents rift and the relationship between extension and
-            magmatism. I make most of my observations and draw much of my
-            scientific inspiration from field-based investigations. My research
-            projects generally involve detailed geologic mapping of critical
-            areas followed by appropriate laboratory measurements (e.g.,
-            radiometric dating, geochemical analyses) and numerical modeling in
-            order to better understand the structural and/or thermal process
-            under study. Recent work has focused on the Cenozoic evolution of
-            the Basin and Range province of the western U.S. and on the origin
-            of Cretaceous gneiss domes in Arctic Alaska and northeast Russia.
-            Current and future studies will expanded on these themes and will
-            focus on the evolution of the Mexican Basin and Range province and
-            the structural evolution of gneiss domes on the Tibetan plateau.
-          </>
-        />
+        >
+          My interests lie in the general fields of structural geology and
+          tectonics and are focused on deformational and thermal processes
+          within the continental lithosphere. My research is mainly in the field
+          of Extensional Tectonics and is focused on exactly how continents rift
+          and the relationship between extension and magmatism. I make most of
+          my observations and draw much of my scientific inspiration from
+          field-based investigations. My research projects generally involve
+          detailed geologic mapping of critical areas followed by appropriate
+          laboratory measurements (e.g., radiometric dating, geochemical
+          analyses) and numerical modeling in order to better understand the
+          structural and/or thermal process under study. Recent work has focused
+          on the Cenozoic evolution of the Basin and Range province of the
+          western U.S. and on the origin of Cretaceous gneiss domes in Arctic
+          Alaska and northeast Russia. Current and future studies will expanded
+          on these themes and will focus on the evolution of the Mexican Basin
+          and Range province and the structural evolution of gneiss domes on the
+          Tibetan plateau.
+        </Profile>
         <Profile
           name="Evan Monroe, PhD"
           description="Geologist"
           avatar="/static/images/monroe_avatar.jpg"
-          children=<>
-            Late Cretaceous tectonic evolution of the Deep Creek-Kern Mountains,
-            eastern Nevada and western Utah: Magmatically induced large-scale
-            folding, dynamothermal metamorphism, and ductile strain at mid- to
-            upper-crustal levels in the Sevier hinterland
-          </>
-        />
+        >
+          Late Cretaceous tectonic evolution of the Deep Creek-Kern Mountains,
+          eastern Nevada and western Utah: Magmatically induced large-scale
+          folding, dynamothermal metamorphism, and ductile strain at mid- to
+          upper-crustal levels in the Sevier hinterland
+        </Profile>
       </Stack>
     </Section>
   )
