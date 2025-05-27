@@ -60,11 +60,6 @@ import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
-export const meta: Metadata = {
-  title: 'Saas UI Landingspage',
-  description: 'Free SaaS landingspage starter kit',
-}
-
 const Home: NextPage = () => {
   return (
     <Box>
@@ -324,11 +319,25 @@ const AboutUsSection = () => {
         </Heading>
       }
       description={
-        <>
-          We provide comprehensive geological services, including geologic
-          mapping, analytical procedures, and expert review of existing data, to
-          guide successful lithium exploration and development.
-        </>
+        <Stack spacing={4}>
+          <div>
+            With over 40 years of combined experience and deep expertise in
+            structural geology, geologic mapping, petrography, and analytical
+            techniques, Gans-Monroe Consulting provides comprehensive geological
+            services tailored to lithium exploration and development. Our team
+            offers strategic guidance and technical insight to help clients
+            evaluate prospects, reduce risk, and advance projects through every
+            stage—from early exploration to resource definition.
+          </div>
+          <div>
+            We integrate diverse geological approaches and cutting-edge methods
+            to deliver clear, actionable insights and efficient workflows that
+            accelerate your path to viable lithium deposits. Our commitment is
+            to empower clients with reliable data and expert interpretation,
+            ensuring informed decisions in the dynamic energy transition
+            landscape.
+          </div>
+        </Stack>
       }
       align="left"
       columns={[1, 2, 3]}
