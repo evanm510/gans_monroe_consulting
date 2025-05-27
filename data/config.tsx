@@ -35,7 +35,9 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="https://twitter.com/Pagebakers">
+          Evan Monroe and Phillip Gans
+        </Link>
       </>
     ),
     links: [

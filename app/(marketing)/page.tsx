@@ -40,6 +40,7 @@ import {
 
 import * as React from 'react'
 
+import { About } from '#components/about'
 import { ButtonLink } from '#components/button-link/button-link'
 import { Faq } from '#components/faq'
 import { Features } from '#components/features'
@@ -69,7 +70,9 @@ const Home: NextPage = () => {
     <Box>
       <HeroSection />
 
-      <HighlightsSection />
+      {/* <HighlightsSection /> */}
+
+      <AboutUsSection />
 
       <ServicesSection />
 
@@ -189,7 +192,7 @@ const HeroSection: React.FC = () => {
             title: 'Efficient Exploration',
             icon: FiThumbsUp,
             description:
-              'Designed to streamline your exploration process, accelerating discovery and reducing risk.',
+              'Designed to reduce boilerplate and fully typed, build your product at speed.',
             iconPosition: 'left',
             delay: 1.1,
           },
@@ -303,6 +306,34 @@ const HighlightsSection = () => {
         </Wrap>
       </HighlightsItem>
     </Highlights>
+  )
+}
+
+const AboutUsSection = () => {
+  return (
+    <About
+      id="about"
+      title={
+        <Heading
+          lineHeight="short"
+          fontSize={['2xl', null, '4xl']}
+          textAlign="left"
+          as="p"
+        >
+          About Us
+        </Heading>
+      }
+      description={
+        <>
+          We provide comprehensive geological services, including geologic
+          mapping, analytical procedures, and expert review of existing data, to
+          guide successful lithium exploration and development.
+        </>
+      }
+      align="left"
+      columns={[1, 2, 3]}
+      iconSize={4}
+    />
   )
 }
 
