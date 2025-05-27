@@ -75,7 +75,7 @@ const Home: NextPage = () => {
 
       <TestimonialsSection />
 
-      <PricingSection />
+      {/* <PricingSection /> */}
 
       <FaqSection />
     </Box>
@@ -92,25 +92,17 @@ const HeroSection: React.FC = () => {
             id="home"
             justifyContent="flex-start"
             px="0"
-            title={
-              <FallInPlace>
-                Build beautiful
-                <Br /> software faster
-              </FallInPlace>
-            }
+            title={<FallInPlace>Gans-Monroe Lithium Consulting</FallInPlace>}
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
+                We offer strategic guidance and technical expertise in the
+                geology and exploration of lithium resources, helping clients
+                evaluate prospects, reduce risk, and advance projects in the
+                evolving energy transition landscape.
               </FallInPlace>
             }
           >
-            <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
-
+            {/* <FallInPlace delay={0.8}>
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="/signup">
                   Sign Up
@@ -135,7 +127,7 @@ const HeroSection: React.FC = () => {
                   View demo
                 </ButtonLink>
               </ButtonGroup>
-            </FallInPlace>
+            </FallInPlace> */}
           </Hero>
           <Box
             height="600px"
@@ -444,15 +436,15 @@ const TestimonialsSection = () => {
   )
 }
 
-const PricingSection = () => {
-  return (
-    <Pricing {...pricing}>
-      <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
-      </Text>
-    </Pricing>
-  )
-}
+// const PricingSection = () => {
+//   return (
+//     <Pricing {...pricing}>
+//       <Text p="8" textAlign="center" color="muted">
+//         VAT may be applicable depending on your location.
+//       </Text>
+//     </Pricing>
+//   )
+// }
 
 const FaqSection = () => {
   return <Faq {...faq} />
