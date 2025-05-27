@@ -86,7 +86,7 @@ export const About: React.FC<AboutProps> = (props) => {
       <Testimonial
         name="Phillip Gans, PhD"
         description="Senior Geologist"
-        avatar="/static/images/avatar2.jpg"
+        avatar="/static/images/gans_avatar.jpg"
         href=""
         children=<>
           My interests lie in the general fields of structural geology and
@@ -111,7 +111,7 @@ export const About: React.FC<AboutProps> = (props) => {
       <Testimonial
         name="Evan Monroe, PhD"
         description="Geologist"
-        avatar="/static/images/avatar2.jpg"
+        avatar="/static/images/monroe_avatar.jpg"
         children=<>
           Late Cretaceous tectonic evolution of the Deep Creek-Kern Mountains,
           eastern Nevada and western Utah: Magmatically induced large-scale
