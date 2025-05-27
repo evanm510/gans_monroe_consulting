@@ -9,20 +9,21 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Gans-Monroe Consulting',
+    description:
+      'Expert geological services for successful lithium exploration and development',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
   header: {
     links: [
       {
-        id: 'services',
-        label: 'Services',
+        id: 'about',
+        label: 'About Us',
       },
       {
-        id: 'pricing',
-        label: 'Pricing',
+        id: 'services',
+        label: 'Services',
       },
       {
         id: 'faq',
@@ -57,26 +58,27 @@ const siteConfig = {
     features: [
       {
         icon: FiCheck,
-        title: 'Accessible',
-        description: 'All components strictly follow WAI-ARIA standards.',
+        title: 'Actionable Insights',
+        description:
+          'We transform complex geological data into clear, actionable insights for strategic decision-making.',
       },
       {
         icon: FiCheck,
-        title: 'Themable',
+        title: 'Tailored Solutions',
         description:
-          'Fully customize all components to your brand with theme support and style props.',
+          'Our services are customized to fit your unique project needs, from early exploration to resource definition.',
       },
       {
         icon: FiCheck,
-        title: 'Composable',
+        title: 'Integrated Approach',
         description:
-          'Compose components to fit your needs and mix them together to create new ones.',
+          'We combine diverse geological methods for a holistic and comprehensive understanding of your targets.',
       },
       {
         icon: FiCheck,
-        title: 'Productive',
+        title: 'Efficient Exploration',
         description:
-          'Designed to reduce boilerplate and fully typed, build your product at speed.',
+          'Designed to streamline your exploration process, accelerating discovery and reducing risk.',
       },
     ],
   },

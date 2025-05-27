@@ -162,33 +162,34 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: 'Accessible',
+            title: 'Actionable Insights',
             icon: FiSmile,
-            description: 'All components strictly follow WAI-ARIA standards.',
+            description:
+              'We transform complex geological data into clear, actionable insights for strategic decision-making.',
             iconPosition: 'left',
             delay: 0.6,
           },
           {
-            title: 'Themable',
+            title: 'Tailored Solutions',
             icon: FiSliders,
             description:
-              'Fully customize all components to your brand with theme support and style props.',
+              'Our services are customized to fit your unique project needs, from early exploration to resource definition.',
             iconPosition: 'left',
             delay: 0.8,
           },
           {
-            title: 'Composable',
+            title: 'Integrated Approach',
             icon: FiGrid,
             description:
-              'Compose components to fit your needs and mix them together to create new ones.',
+              'We combine diverse geological methods for a holistic and comprehensive understanding of your targets.',
             iconPosition: 'left',
             delay: 1,
           },
           {
-            title: 'Productive',
+            title: 'Efficient Exploration',
             icon: FiThumbsUp,
             description:
-              'Designed to reduce boilerplate and fully typed, build your product at speed.',
+              'Designed to streamline your exploration process, accelerating discovery and reducing risk.',
             iconPosition: 'left',
             delay: 1.1,
           },
@@ -203,7 +204,7 @@ const HighlightsSection = () => {
   const { value, onCopy, hasCopied } = useClipboard('yarn add @saas-ui/react')
 
   return (
-    <Highlights>
+    <Highlights id="about">
       <HighlightsItem colSpan={[1, null, 2]} title="Core components">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
@@ -316,16 +317,14 @@ const ServicesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Services
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          We provide comprehensive geological services, including geologic
+          mapping, analytical procedures, and expert review of existing data, to
+          guide successful lithium exploration and development.
         </>
       }
       align="left"
