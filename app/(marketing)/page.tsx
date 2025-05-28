@@ -20,14 +20,21 @@ import { Br, Link } from '@saas-ui/react'
 import type { Metadata, NextPage } from 'next'
 import Image from 'next/image'
 import {
+  FiActivity,
   FiArrowRight,
+  FiBookOpen,
   FiBox,
   FiCheck,
+  FiClock,
   FiCode,
+  FiCompass,
   FiCopy,
   FiFlag,
   FiGrid,
+  FiImage,
+  FiLayers,
   FiLock,
+  FiMap,
   FiSearch,
   FiSliders,
   FiSmile,
@@ -142,7 +149,7 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/geologic_map.png"
                   width={1200}
                   height={762}
                   alt="Screenshot of a ListPage in Saas UI Pro"
@@ -324,7 +331,7 @@ const AboutUsSection = () => {
       description={
         <Stack spacing={4}>
           <div>
-            With over 40 years of combined experience and deep expertise in
+            With over 50 years of combined experience and deep expertise in
             structural geology, geologic mapping, petrography, and analytical
             techniques, Gans-Monroe Consulting provides comprehensive geological
             services tailored to lithium exploration and development. Our team
@@ -375,71 +382,52 @@ const ServicesSection = () => {
       iconSize={4}
       features={[
         {
-          title: '#components.',
-          icon: FiBox,
+          title: 'Geologic Mapping.',
+          icon: FiMap,
           description:
-            'All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.',
+            'Detailed field-based and remote geologic mapping tailored to lithium exploration and structural interpretation.',
           variant: 'inline',
         },
         {
-          title: 'Starterkits.',
-          icon: FiLock,
+          title: 'U-Pb Geochronology.',
+          icon: FiClock,
           description:
-            'Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.',
+            'High-precision dating of zircon and other minerals to constrain the timing of geological processes relevant to lithium systems.',
           variant: 'inline',
         },
         {
-          title: 'Documentation.',
-          icon: FiSearch,
+          title: 'Isotopic Geochemistry.',
+          icon: FiActivity,
           description:
-            'Extensively documented, including storybooks, best practices, use-cases and examples.',
+            'Isotopic analysis (Sr, Nd, Pb, etc.) to unravel source characteristics, alteration history, and ore-forming processes.',
           variant: 'inline',
         },
         {
-          title: 'Onboarding.',
-          icon: FiUserPlus,
+          title: 'Petrography.',
+          icon: FiImage,
           description:
-            'Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.',
+            'Detailed mineralogical and textural analysis of rock samples using both optical and electron microscopy.',
           variant: 'inline',
         },
         {
-          title: 'Feature flags.',
-          icon: FiFlag,
+          title: 'Structural Analysis.',
+          icon: FiCompass,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            'Interpretation of deformation features to understand structural controls on mineralization and guide exploration targeting.',
           variant: 'inline',
         },
         {
-          title: 'Upselling.',
-          icon: FiTrendingUp,
+          title: 'Review of Existing Geological Data.',
+          icon: FiLayers,
           description:
-            '#components and hooks for upgrade flows designed to make upgrading inside your app frictionless.',
+            'Comprehensive interpretation of legacy data including reports, logs, and maps to guide exploration strategy.',
           variant: 'inline',
         },
         {
-          title: 'Themes.',
-          icon: FiToggleLeft,
+          title: 'Short Courses & Training.',
+          icon: FiBookOpen,
           description:
-            'Includes multiple themes with darkmode support, always have the perfect starting point for your next project.',
-          variant: 'inline',
-        },
-        {
-          title: 'Generators.',
-          icon: FiTerminal,
-          description:
-            'Extend your design system while maintaininig code quality and consistency with built-in generators.',
-          variant: 'inline',
-        },
-        {
-          title: 'Monorepo.',
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
+            'Custom workshops and training in structural geology and volcanology, tailored for industry teams and students.',
           variant: 'inline',
         },
       ]}

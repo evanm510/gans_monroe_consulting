@@ -19,11 +19,11 @@ export const Contact: React.FC = (props) => {
         <Text>
           Email us at:{' '}
           <Link
-            href="mailto:info@lithiumconsulting.com"
+            href="mailto:info@gansmonroeconsulting.com"
             color="blue.500"
             isExternal
           >
-            info@lithiumconsulting.com
+            info@gansmonroeconsulting.com
           </Link>
         </Text>
       </VStack>

@@ -141,37 +141,38 @@ export const About: React.FC<AboutProps> = (props) => {
       <Stack spacing={8}>
         <Profile
           name="Phillip Gans, PhD"
-          description="Senior Geologist"
+          description="Chief Geologist"
           avatar="/static/images/gans_avatar.jpg"
           href=""
         >
-          My interests lie in the general fields of structural geology and
-          tectonics and are focused on deformational and thermal processes
-          within the continental lithosphere. My research is mainly in the field
-          of Extensional Tectonics and is focused on exactly how continents rift
-          and the relationship between extension and magmatism. I make most of
-          my observations and draw much of my scientific inspiration from
-          field-based investigations. My research projects generally involve
-          detailed geologic mapping of critical areas followed by appropriate
-          laboratory measurements (e.g., radiometric dating, geochemical
-          analyses) and numerical modeling in order to better understand the
-          structural and/or thermal process under study. Recent work has focused
-          on the Cenozoic evolution of the Basin and Range province of the
-          western U.S. and on the origin of Cretaceous gneiss domes in Arctic
-          Alaska and northeast Russia. Current and future studies will expanded
-          on these themes and will focus on the evolution of the Mexican Basin
-          and Range province and the structural evolution of gneiss domes on the
-          Tibetan plateau.
+          Lorem ipsum dolor sit amet, ut mea ipsum mollis disputando, ei amet
+          dicit admodum duo, mel facer noluisse id. Sit eu nibh iisque eruditi,
+          prompta veritus democritum in sed, ea ridens mediocritatem duo. In
+          blandit gloriatur mnesarchum vim, ex tacimates constituam eos. Suas
+          utinam mel at, no eos oportere electram. Vim sumo persecuti no. Qui at
+          velit soleat mnesarchum, iusto noluisse eos te, at eos omnis
+          quaerendum. Mea eu vitae hendrerit theophrastus, vis ne velit facilisi
+          legendos, neglegentur voluptatibus sit ut. Facete tibique mnesarchum
+          et cum. Eu eam suas unum nobis, rebum petentium quo et. Id his fugit
+          graece, augue phaedrum efficiantur an quo. Ad sea illud efficiendi,
+          nobis periculis efficiantur cu ius. Eu sed natum movet.
         </Profile>
         <Profile
           name="Evan Monroe, PhD"
           description="Geologist"
           avatar="/static/images/monroe_avatar.jpg"
         >
-          Late Cretaceous tectonic evolution of the Deep Creek-Kern Mountains,
-          eastern Nevada and western Utah: Magmatically induced large-scale
-          folding, dynamothermal metamorphism, and ductile strain at mid- to
-          upper-crustal levels in the Sevier hinterland
+          Lorem ipsum dolor sit amet, ut mea ipsum mollis disputando, ei amet
+          dicit admodum duo, mel facer noluisse id. Sit eu nibh iisque eruditi,
+          prompta veritus democritum in sed, ea ridens mediocritatem duo. In
+          blandit gloriatur mnesarchum vim, ex tacimates constituam eos. Suas
+          utinam mel at, no eos oportere electram. Vim sumo persecuti no. Qui at
+          velit soleat mnesarchum, iusto noluisse eos te, at eos omnis
+          quaerendum. Mea eu vitae hendrerit theophrastus, vis ne velit facilisi
+          legendos, neglegentur voluptatibus sit ut. Facete tibique mnesarchum
+          et cum. Eu eam suas unum nobis, rebum petentium quo et. Id his fugit
+          graece, augue phaedrum efficiantur an quo. Ad sea illud efficiendi,
+          nobis periculis efficiantur cu ius. Eu sed natum movet.
         </Profile>
       </Stack>
     </Section>
